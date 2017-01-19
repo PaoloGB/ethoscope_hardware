@@ -1,6 +1,5 @@
 
 Optomotor Module
-
 =========================
 
 
@@ -32,7 +31,6 @@ Therefore, before we start, we have something like this:
 
 
 Main
-
 -----------------------------------------------
 
 The idea is to prepare two electronic boards : Arduino micro and TLC5943, screw them to the bottom of the main box and connect them to each other. Also, we add a push button for testing purposes.
@@ -155,7 +153,6 @@ So In the end, the assembles and connected push button looks like this:
 [[picture connected push button]]
 
 Opto
-
 ------------------
 
 In order to deliver light to specific tubes, we will make an array of LEDs and connect the LED, with optic fibres, to individual tubes.
@@ -186,7 +183,6 @@ To summarise, this is something like that:
 
 
 Motor
-
 --------------------
 
 Motors each have their own individual slots, so we can just make 10 motors and fit them on the box.
@@ -220,7 +216,6 @@ Then, when mounted, they look like that:
 [[picture mounted motors]]
 
 Putting things together
-
 -------------------------------------
 
 In the end, we need to assemble the whole thing.

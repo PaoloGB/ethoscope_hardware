@@ -50,7 +50,7 @@ Adafruit_TLC5947 tlc = Adafruit_TLC5947(NUM_TLC5974,
 
 /* ======================== Push button======================== */
 
-#define PUSH_BUTTON_PIN 5
+#define PUSH_BUTTON_PIN 12
 // how long (in ms) the push buton should be hold for before demo is run
 #define PUSH_BUTTON_THR 2000
 // a timer that records how long push button is pressed for
@@ -121,6 +121,7 @@ void sendPWM(unsigned int idx, unsigned int duration, unsigned int duty_cycle = 
 }
 
 void demo(){
+  Serial.println("DEMO");
   for (unsigned int i = 0; i != N_OUTPUTS; ++i){
     tlc.setPWM(i,MAX_PWM);
     tlc.write();

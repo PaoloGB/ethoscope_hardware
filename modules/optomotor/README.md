@@ -58,7 +58,7 @@ This is the "master" board that processes input from the computer and coordinate
 
 
 
-![arduino](./img/arduino.svg)
+![arduino](./img/arduino.png)
 
 
 ### TLC5943
@@ -77,7 +77,7 @@ It is ultimately responsible of turning on/off components (LED/motors).
 
 
 
-![tlc](./img/tlc.svg)
+![tlc](./img/tlc.png)
 
 
 #### Board connector
@@ -101,7 +101,7 @@ To build the connector (picture below), we use **80mm** of **6-way** ribbon cabl
 
 
 
-![board_connector](./img/board_connector.svg)
+![board_connector](./img/board_connector.png)
 
 
 
@@ -139,7 +139,7 @@ Admittedly, it is not very easy to spin the push button at this stage, but it wi
 
 13. Connect the **digital out** wire on **pin 12** of the arduino
 
-![push_button](./img/push_button.svg)
+![push_button](./img/push_button.png)
 
 ###Power cable
 
@@ -154,7 +154,7 @@ Admittedly, it is not very easy to spin the push button at this stage, but it wi
 
 
 
-![main_finished](./img/main_finished.svg)
+![main_finished](./img/main_finished.png)
 
 Opto
 ------------------

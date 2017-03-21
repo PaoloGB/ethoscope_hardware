@@ -17,7 +17,7 @@ PCB Header (1 x 6),circuitry,3,RS,http://uk.rs-online.com/web/p/pcb-headers/6812
 Female 2 pins crimps,circuitry,20,Farnell,http://uk.farnell.com/multicomp/2226tg/crimp-terminal-24-28awg/dp/1593506,0.24,
 Crimps contact,circuitry,40,Farnell,http://uk.farnell.com/multicomp/2226tg/crimp-terminal-24-28awg/dp/1593529,0.06,
 Ribbon cable,circuitry,,RS,,0,
-Resistor (~1k),circuitry,2,RS,TODO!!!,0,
+Resistor (1.15k),circuitry,2,RS,http://uk.rs-online.com/web/p/through-hole-fixed-resistors/7548691/,0.25,
 N20 gear motor,motor,10,???,???,4,
 Silicon tubing 6x9 mm,motor,1,VWR,,2,
 Filter Box,opto,1,Polygonal Tree/Custom made,TODO,0,

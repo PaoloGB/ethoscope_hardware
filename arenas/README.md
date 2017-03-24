@@ -2,6 +2,7 @@ Arenas
 ==================
 
 Arenas are a crucial part of experimental design using the ethoscope platform.
+The original onshape repository for all arenas lives [here](https://cad.onshape.com/documents/56ac92e6e4b07682577ddeb3/w/f75f54bb0e265153acfec7dd/e/395a5571e38d50273e8a240c).
 
 An arena is physical translation of an experimental paradigm.
 

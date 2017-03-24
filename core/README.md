@@ -2,6 +2,7 @@ Ethoscope core
 ==============
 
 This document describes the core of the ethoscope device.
+The original onshape repository for the core is available [here](https://cad.onshape.com/documents/56ac957ce4b06a92e0ed7352/w/0af5bcd5aa6f698123921d81/e/9491b49b9158a49e2b29f937).
 The "core" referes to device without arena or extra modules.
 it is made of three mainparts:
 

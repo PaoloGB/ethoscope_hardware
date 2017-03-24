@@ -10,8 +10,8 @@ Organisation
 ==================
 This repo is organized as follows:
   1. There is a collection of folders for every part in the Ethoscope.
-  2. Inside each folder there is a README file explaining the function of the part and how to put all the parts together.
-  3. There is as well a folder for each sub-part.
+  2. Inside each folder there is a README file explaining the function of the part and how to put it together.
+  3. There is also a folder for each sub-part.
   4. Inside each terminal folder you can find the last version of the hardware with a README explaining its function in detail. 
    
   

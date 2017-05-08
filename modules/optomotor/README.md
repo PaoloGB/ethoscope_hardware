@@ -8,10 +8,7 @@ The optomotor is an ethoscope module that allows us to deliver both mechanical (
 The original onshape repository for the optomotors lives [here](https://cad.onshape.com/documents/3d4348ea20384ce925691583/w/6966f4288591c2cdd19df81a/e/ab72f28500a5d560744ab72b).
 
 The assembled module will look like this:
-
-
-[[pictures A (module), B module+ ethoscope]]
-
+![optomotor](./img/optomotor.png)
 
 Conceptually, the module contains three distinct parts:
 

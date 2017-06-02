@@ -1,3 +1,12 @@
 -Holes to improve ventilation?
 -Change vertical walls?
 -Could the Pi be at the bottom?
+
+
+--------------------------------------
+
+Fixings
+
+Camera to case: M2, 6 mm (8 mm max) if using nut. 
+Pi to case: M2.5, lenght 5 mm (or 6 mm), flat head
+Case close: M2.5, length 8 mm (or 12 mm), flat head

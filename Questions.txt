@@ -1,8 +1,3 @@
--Holes to improve ventilation?
--Change vertical walls?
--Could the Pi be at the bottom?
-
-
 --------------------------------------
 
 Fixings

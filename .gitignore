@@ -1,2 +1,4 @@
 *.bak
 *.lck
+*/OldVersions/*
+Shield/Files/OldVersions/*

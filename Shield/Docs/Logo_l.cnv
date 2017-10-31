@@ -1,0 +1,10 @@
+#This is the Layer Conversion File used for
+#importing DXF data into Allegro/APD.
+
+#CLASS!            SUBCLASS!                 DXF_LAYER!
+
+MANUFACTURING!
+                   NO_GLOSS_TOP!             0!
+                   NO_GLOSS_BOTTOM!          LAYER1!
+
+#END

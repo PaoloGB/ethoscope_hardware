@@ -2,3 +2,7 @@
 *.lck
 */OldVersions/*
 Shield/Files/OldVersions/*
+core_Rymapt/PiCase/OldVersions/*
+core_Rymapt/LightBox/OldVersions/*
+core/light_box/OldVersions/*
+OldVersions/*

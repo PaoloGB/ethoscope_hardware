@@ -1,0 +1,140 @@
+\documentclass[10pt,twoside, fleqn]{memoir}
+\usepackage{graphicx}
+\usepackage{hyperref} % HYPERLINKS
+\usepackage[nomain,acronym,toc]{glossaries}
+\makeglossaries
+\usepackage{xcolor}
+\hypersetup{
+    colorlinks,
+    linkcolor={blue!50!black},
+    citecolor={blue!50!black},
+    urlcolor={blue!80!black}
+}
+%\usepackage[T1]{fontenc}
+%\usepackage{mathpazo} % USE PALATINO FONT
+%\usepackage[latin1]{inputenc}
+%\usepackage[xindy]{imakeidx}
+
+%\usepackage[british]{babel}
+%\usepackage[framed, numbered, autolinebreaks]{mcode}
+%\usepackage{listings}
+
+%
+
+%\usepackage[font=footnotesize]{caption}
+%\usepackage{subcaption}
+%\usepackage{pdflscape} %Landscape pages
+%\usepackage{pdfpages}
+%\usepackage{amsmath}
+%\usepackage{amssymb}
+%\usepackage{gensymb} %Degree sign
+%\usepackage{footnote} %Footnotes in tabulars
+%\usepackage{xcolor,framed,marginnote,blindtext}
+%\colorlet{shadecolor}{blue!10}
+%
+%
+%\usepackage{tikz} %TO CREATE BLOCK DIAGRAMS
+%%\usetikzlibrary{external}
+%%\tikzexternalize
+%%\tikzset{external/mode=graphics if exists}
+%
+%\usetikzlibrary{shapes,arrows}
+%\usetikzlibrary{positioning}
+%
+%\setcounter{tocdepth}{2} % DEPTH OF TABLE OF CONTENTS; 2= SUBSECTIONS INCLUDED
+%\setcounter{secnumdepth}{2} % SUBSECTIONS ARE NUMBERED
+%
+%\usetikzlibrary{positioning}
+
+
+
+%% BEGIN TITLE
+
+\makeatletter
+\def\maketitle{%
+  \null
+  \thispagestyle{empty}%
+  \vfill
+  \begin{center}\leavevmode
+    \normalfont
+    {\LARGE\raggedleft \@author\par}%
+    \hrulefill\par
+    {\huge\raggedright \@title\par}%
+    \vskip 1cm
+%    {\Large \@date\par}%
+  \end{center}%
+  \vfill
+  \null
+  \cleardoublepage
+  }
+\makeatother
+\author{RYMAPT}
+\title{Ethoscope user manual and documentation}
+\date{23 February 2015}
+
+
+\input{./misc/rymapt_glossary}
+
+
+%%% BEGIN DOCUMENT
+\makeindex
+\begin{document}
+
+\let\cleardoublepage\clearpage
+
+
+\maketitle
+\frontmatter
+
+\null\vfill
+\begin{center}
+\begin{figure}
+  \centering
+  \includegraphics[width=0.80\textwidth]{./images/isometric.jpg}
+  \label{fig:Intro}
+\end{figure}
+\end{center}
+\begin{flushleft}
+\textit{Ethoscope user manual and documentation}\newline
+\newline
+RYMAPT - 2017\newline info@rymapt.com
+\bigskip
+
+\end{flushleft}
+\let\cleardoublepage\clearpage
+
+\newpage
+\tableofcontents
+
+\mainmatter
+\sloppy
+
+%\newenvironment{SpecialPar}
+%  {\begin{shaded}\marginnote{\fbox{NOTE}}}
+%  {\end{shaded}}
+
+
+
+%%% INCLUDE CHAPTERS
+%\include{ch_Introduction}
+\include{ch_hardware}
+%\include{ch_MainGUI}
+%\include{ch_Calibration}
+%\include{ch_Tracking}
+%\include{ch_PSF}
+
+%%% APPENDIX
+%\include{ch_Appendix}
+
+
+%%% GLOSSARY
+%\printglossaries
+%\printglossary[type=\acronymtype]
+\printglossary[type=\acronymtype,title=Abbreviations]
+
+%%% BIBLIOGRAPHY
+%\bibliographystyle{unsrt}
+%\bibliography{./../Bibliography/myBibliography}
+
+
+\end{document} 

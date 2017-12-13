@@ -10,6 +10,14 @@
     citecolor={blue!50!black},
     urlcolor={blue!80!black}
 }
+\definecolor{warningbackground}{RGB}{252,226,158}
+\definecolor{infobackground}{RGB}{217,237,247}
+\definecolor{infoforeground}{RGB}{58,135,173}
+\definecolor{infoborder}{RGB}{188,232,241}
+\usepackage{environ}
+\usepackage{tikz}
+\usetikzlibrary{fit,backgrounds,calc}
+
 %\usepackage[T1]{fontenc}
 %\usepackage{mathpazo} % USE PALATINO FONT
 %\usepackage[latin1]{inputenc}
@@ -109,10 +117,39 @@ RYMAPT - 2017\newline info@rymapt.com
 \mainmatter
 \sloppy
 
-%\newenvironment{SpecialPar}
-%  {\begin{shaded}\marginnote{\fbox{NOTE}}}
-%  {\end{shaded}}
+\newenvironment{SpecialPar}
+  {\begin{shaded}\marginnote{\fbox{NOTE}}}
+  {\end{shaded}}
 
+%%%%%%%%%%%%%%%%%%%%%%%
+% COMMAND TO CREATE A WARNING BOX
+\NewEnviron{alertinfo}[1]
+{
+    \begin{tikzpicture}
+    \node[inner sep=0pt,
+          draw=infoborder,
+          line width=1.2pt,
+          fill=infobackground] (box) {\parbox[t]{.99\textwidth}
+        {%
+            \begin{minipage}{.15\textwidth}
+                \centering\tikz[scale=3]
+                \node[scale=1]
+                {
+                    \includegraphics[scale=0.04]{./images/warning.png}
+                };
+            \end{minipage}%
+           \begin{minipage}{.80\textwidth}
+                \vskip 10pt
+                \textbf{\textcolor{infoforeground}{#1}}\par\smallskip
+                \textcolor{infoforeground}{\BODY}
+                \par\smallskip
+            \end{minipage}\hfill
+        }%
+    };
+
+    \end{tikzpicture}
+}
+%%%%%%%%%%%%%%%%%%%%%%%
 
 
 %%% INCLUDE CHAPTERS

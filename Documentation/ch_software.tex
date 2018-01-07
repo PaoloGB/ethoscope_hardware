@@ -1,0 +1,33 @@
+\chapter{Software description}\label{ch:software}
+
+\section{Network Setup}\label{ch:network}
+Each ethoscope unit comes pre-configured to join the WiFi network of the supplied router. Wired
+access is also possible with an ethernet cable from the ethoscope to the router. The interface
+for each device is available at the address printed on the case, which can be accessed in any web
+browser on Windows, Mac OS X or iOS devices.
+
+\section{Advanced use}\label{ch:advanced}
+\subsection{MySQL access}\label{ch:mysql}
+The recorded data can be retrieved from each ethoscope by accessing the MySQL database running on
+the device. There are many open source and proprietry tools that can access MySQL databases. Read
+only access is available with the username ``ethoscope'' and password ``ethoscope'' on the normal MySQL
+port (3306).
+
+\subsection{SSH access}\label{ch:mysql}
+It is possible to logon to each ethoscope directly to perform custom configuration, however this is
+discouraged because careless use can render the devices inoperable. In some cases this can invalidate
+your warranty. For normal use it should never be necessary to access the device directly.
+
+Advanced users who know what they're doing can access the device on the normal SSH port (22) with
+the username ``pi'' and the password printed on the case of the ethoscope.
+
+\subsection{Using a different network}\label{ch:mysql}
+Ethoscope units will work on another network with no configuration if connected by an ethernet cable.
+WiFi configuration is not possible with the current release of the software but will come in a
+future update. It is however possible to SSH on to the device and configure other WiFi networks by
+hand using the ``wpa\textunderscore{}cli'' Linux tool, but this is for advanced users only.
+
+Please note that using Ethoscopes on open networks is discouraged since there is no encryption or
+security in the current software release. Anybody on the same network can read all data and
+start/stop runs. Rymapt is working to remedy this, and encrypted connections with access control
+will be available in a future update along with guided WiFi setup.

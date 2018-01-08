@@ -1,0 +1,63 @@
+\chapter{Software description}\label{ch:software}
+
+\section{Network Setup}\label{sec:network}
+To communicate with the Ethoscope devices, the control computer, smart phone or tablet (henceforth ``client'')
+must be on the same network as the Ethoscopes. Each ethoscope unit comes pre-configured to join the WiFi network
+of the supplied router. The client can connect to this network using the WiFi details printed on the case of
+the router, or by connecting an ethernet cable from the client to the router.
+
+The control interface for each Ethoscope is available at the address printed on the case (e.g.
+\textit{http://ethoscope-01234.local} where \textit{01234} is a hexadecimal number unique to each unit). If this
+address does not work see section \ref{sec:ipaddress}. On connecting to this address, you will be presented with
+a list of all Ethoscope devices on the network. Note that it is possible to control all Ethoscopes on the network
+by connecting to any one individual Ethoscope.
+
+\section{Connecting with an IP address}\label{sec:ipaddress}
+Ethoscope control is through a web interface, which in principle should work with any javascript enabled browser.
+However one needs to know the address to connect on. Ethoscope devices advertise their presence using the mDNS
+(also called ZeroConf, or Bonjour on Apple devices or Avahi on Linux devices) and LLMNR protocols using the
+hostname printed on the ethoscope case.
+
+Some clients, notably Android, are not able to resolve mDNS or LLMNR addresses and this address will not work.
+In these cases it is necessary to connect using the device's IP address. The IP address can be found either
+by logging on to the router and looking at the list of connected devices, or by using third party apps that
+scan the network and list all mDNS capable devices.
+
+For Android there is \textbf{ZeroConf Browser}\footnote{https://play.google.com/store/apps/details?id=com.melloware.zeroconf}
+and for iOS there is \textbf{Flame Services Browser}\footnote{https://itunes.apple.com/gb/app/flame/id325206381}.
+Note that these apps are unaffiliated with Rymapt and we cannot offer support on their use. They are however quite
+simple, just open the app and select the ethoscope device, the IP address will be shown underneath and will look
+similar to \textit{192.168.0.102}. Type that address into your browser and you will be presented with the Ethoscope
+control interface.
+
+%% Need to add decent instructions for logging on to the router, but I don't have one with me so I'll add
+%% less vague instructions later
+To access the router's interface and see a list of connected devices, connect to \textit{http://192.168.0.1} and
+use the username ``admin'' and password ``admin''. Go to the DHCP page and all devices on the network will be
+listed.
+
+\section{Advanced use}\label{sec:advanced}
+\subsection{MySQL access}\label{subsec:mysql}
+The recorded data can be retrieved from each ethoscope by accessing the MySQL database running on
+the device. There are many open source and proprietry tools that can access MySQL databases. Read
+only access is available with the username ``ethoscope'' and password ``ethoscope'' on the normal MySQL
+port (3306).
+ 
+\subsection{SSH access}\label{subsec:mysql}
+It is possible to logon to each ethoscope directly to perform custom configuration, however this is
+discouraged because careless use can render the devices inoperable. In some cases this can invalidate
+your warranty. For normal use it should never be necessary to access the device directly.
+
+Advanced users who know what they're doing can access the device on the normal SSH port (22) with
+the username ``pi'' and the password printed on the case of the ethoscope.
+
+\subsection{Using a different network}\label{subsec:mysql}
+Ethoscope units will work on another network with no configuration if connected by an ethernet cable.
+WiFi configuration is not possible with the current release of the software but will come in a
+future update. It is however possible to SSH on to the device and configure other WiFi networks by
+hand using the ``wpa\textunderscore{}cli'' Linux tool, but this is for advanced users only.
+
+Please note that using Ethoscopes on open networks is discouraged since there is no encryption or
+security in the current software release. Anybody on the same network can read all data and
+start/stop runs. Rymapt is working to remedy this, and encrypted connections with access control
+will be available in a future update along with guided WiFi setup.

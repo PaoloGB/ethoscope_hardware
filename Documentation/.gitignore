@@ -1,4 +1,8 @@
 ## Rules for the Latex documents
+
+## Specific files not covered by the rules below
+/Ethoscope_UserManual.pdf
+
 ## Core latex/pdflatex auxiliary files:
 *.aux
 *.lof

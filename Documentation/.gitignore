@@ -3,6 +3,9 @@
 ## Specific files not covered by the rules below
 /Ethoscope_UserManual.pdf
 
+## Editor project files
+*.prj
+
 ## Core latex/pdflatex auxiliary files:
 *.aux
 *.lof
